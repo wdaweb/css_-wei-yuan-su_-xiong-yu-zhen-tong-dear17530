@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+    }
+
+    #syringe {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 750px;
+      height: 200px;
+    }
+
+    #needle {
+      width: 600px;
+      height: 1px;
+      background-color: black;
+      position: absolute;
+      top: 50%;
+      left: 60%;
+      transform: translateX(-50%);
+      z-index: -1;
+    }
+
+    #body2 {
+      width: 640px;
+      height: 80px;
+      background-color: rgb(255, 255, 255);
+      border: 1px gray solid;
+      border-radius: 10px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+    }
+
+    #body2::after {
+      content: '';
+      width: 640px;
+      height: 80px;
+      border-radius: 10px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: linear-gradient(to bottom,
+          rgba(255, 255, 255, 0.1) 0%,
+          rgba(93, 93, 94, 0.3) 60%,
+          rgba(255, 255, 255, 0.1) 100%);
+    }
+
+    #plug::after {
+      content: '';
+      width: 50px;
+      height: 120px;
+      border-radius: 10px;
+      position: absolute;
+      top: 50%;
+      right: 330px;
+      transform: translateY(-50%);
+      background: linear-gradient(to bottom,
+          rgba(255, 255, 255, 0.1) 0%,
+          rgba(93, 93, 94, 0.3) 60%,
+          rgba(255, 255, 255, 0.1) 100%);
+    }
+
+    #plug::before {
+      content: '';
+      width: 50px;
+      height: 120px;
+      background-color: rgb(255, 255, 255);
+      border: 1px gray solid;
+      border-radius: 10px;
+      position: absolute;
+      top: 50%;
+      right: 330px;
+      transform: translateY(-50%);
+    }
+
+    #plug {
+      width: 40px;
+      height: 120px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: black;
+      z-index: 1;
+    }
+
+    #body {
+      width: 500px;
+      height: 120px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #ffffff;
+      border: 1px gray solid;
+    }
+
+    #body::after {
+      content: '';
+      width: 250px;
+      height: 120px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%);
+      background-color: rgb(255, 255, 170);
+    }
+
+    #body::before {
+      content: '';
+      width: 500px;
+      height: 120px;
+      position: absolute;
+      background-color: #ffffff;
+      background: linear-gradient(to bottom,
+          rgba(255, 255, 255, 0.1) 0%,
+          rgba(93, 93, 94, 0.3) 60%,
+          rgba(255, 255, 255, 0.1) 100%);
+      z-index: 2;
+    }
+
+    .scale {
+      width: 1px;
+      height: 15px;
+      background-color: gray;
+      display: inline-block;
+      position: relative;
+      top: 0;
+      right: 0%;
+      margin-left: 10px;
+      z-index: 3;
+    }
+
+    span {
+      position: absolute;
+      display: block;
+      bottom: 0;
+      color: gray;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id="syringe">
+    <div id="needle"></div>
+    <div id="body2"></div>
+    <div id="plug"></div>
+    <div id="body">
+      <div class="scale"></div>
+      <div class="scale"></div>
+      <div class="scale"></div>
+      <div class="scale"></div>
+      <div class="scale"></div>
+      <div class="scale"></div>
+      <div class="scale"></div>
+      <div class="scale"></div>
+      <div class="scale"></div>
+      <div class="scale"></div>
+      <div class="scale"></div>
+      <div class="scale"></div>
+      <div class="scale"></div>
+      <div class="scale"></div>
+      <div class="scale"></div>
+      <div class="scale"></div>
+      <div class="scale"></div>
+      <div class="scale"></div>
+      <div class="scale"></div>
+      <div class="scale"></div>
+      <div class="scale"></div>
+      <div class="scale"></div>
+      <div class="scale"></div>
+      <div class="scale"></div>
+      <div class="scale"></div>
+      <div class="scale"></div>
+      <div class="scale"></div>
+      <div class="scale"></div>
+      <div class="scale"></div>
+      <div class="scale"></div>
+      <div class="scale"></div>
+      <div class="scale"></div>
+      <div class="scale"></div>
+      <span>Made in Taiwan</span>
+    </div>
+  </div>
+</body>
+
+</html>

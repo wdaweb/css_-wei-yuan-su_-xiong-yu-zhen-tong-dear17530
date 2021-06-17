@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+    }
+
+    #bear {
+      width: 400px;
+      height: 400px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    #face {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background-color: black;
+    }
+
+    .ears {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: black;
+    }
+
+    #ears-left {
+      position: absolute;
+      top: 50px;
+      left: 80px;
+    }
+
+    #ears-right {
+      position: absolute;
+      top: 50px;
+      right: 80px;
+    }
+
+    #ears-left::after,
+    #ears-right::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: white;
+      z-index: 2;
+    }
+
+    .eyes {
+      width: 60px;
+      height: 60px;
+      background-color: white;
+      border-radius: 50%;
+    }
+
+    #eyes-left {
+      position: absolute;
+      top: 120px;
+      left: 115px;
+    }
+
+    #eyes-right {
+      position: absolute;
+      top: 120px;
+      right: 115px;
+    }
+
+    #eyes-left::after,
+    #eyes-right::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: black;
+      z-index: 2;
+    }
+
+    #cheek {
+      width: 63px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: red;
+      position: absolute;
+      top: 45%;
+      left: 32.5px;
+    }
+
+    #cheek::after {
+      content: '';
+      width: 63px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: red;
+      position: absolute;
+      right: -267.5px;
+    }
+
+    #mouth {
+      width: 100px;
+      height: 75px;
+      border-radius: 50%;
+      background-color: white;
+      position: absolute;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    #mouth::after {
+      content: '';
+      position: absolute;
+      left: calc(50% - 35px);
+      bottom: calc(50% - 25px);
+      width: 70px;
+      height: 25px;
+      border-radius: 50%;
+      background-color: rgb(0, 0, 0);
+      z-index: 1;
+    }
+
+    #mouth::before {
+      content: '';
+      position: absolute;
+      left: calc(50% - 12.5px);
+      top: 10px;
+      width: 25px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: rgb(0, 0, 0);
+    }
+
+    #v {
+      width: 30px;
+      height: 35px;
+      position: absolute;
+      top: 70%;
+      left: 155px;
+      background-color: white;
+      transform: skew(45deg, 0deg);
+      transform-origin: left top;
+    }
+
+    #v::after {
+      content: '';
+      width: 30px;
+      height: 35px;
+      position: absolute;
+      right: -60px;
+      background-color: white;
+      transform: skew(-60deg, 0deg);
+      transform-origin: left top;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="bear">
+    <div id="face"></div>
+    <div id="ears-left" class="ears"></div>
+    <div id="ears-right" class="ears"></div>
+    <div id="eyes-left" class="eyes"></div>
+    <div id="eyes-right" class="eyes"></div>
+    <div id="cheek"></div>
+    <div id="mouth"></div>
+    <div id="v"></div>
+  </div>
+</body>
+
+</html>
